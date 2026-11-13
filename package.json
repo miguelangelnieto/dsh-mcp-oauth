@@ -1,0 +1,28 @@
+{
+  "name": "@local/dsh-mcp-oauth",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "OAuth sign-in and token refresh for MCP servers that accept bearer tokens.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "oauth.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

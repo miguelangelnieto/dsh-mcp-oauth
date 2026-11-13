@@ -1,0 +1,12 @@
+# Installs the plugin with no providers. Configure them in your profile's patch:
+#
+#   - id: dsh-mcp-oauth
+#     config:
+#       providers:
+#         example:
+#           url: https://mcp.example.com/mcp
+#           scopes: mcp offline_access
+- insert:
+    - id: dsh-mcp-oauth
+      name: '@local/dsh-mcp-oauth'
+      config: {}

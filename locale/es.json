@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Servidores MCP con OAuth",
+    "description": "Conecta servidores MCP que requieren tokens bearer OAuth: descubre su servidor de autorización, ejecuta el inicio de sesión en el navegador, guarda y renueva la concesión y registra cada servidor para que aparezcan sus herramientas.",
+    "detail": "docs/DETAIL.md"
+  }
+}

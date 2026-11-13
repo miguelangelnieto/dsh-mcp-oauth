@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "MCP OAuth servers",
+    "description": "Connects MCP servers that require OAuth bearer tokens: discovers their authorization server, runs the browser sign-in, stores and refreshes the grant, and registers each server so its tools appear.",
+    "detail": "docs/DETAIL.md"
+  }
+}
