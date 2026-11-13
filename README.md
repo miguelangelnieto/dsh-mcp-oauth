@@ -23,12 +23,18 @@ built in.
 
 ## Install
 
-Add the package directory as a profile bundle — **Plugins → Add plugin → local
-directory** — or with the plugin manager:
+Add this directory as a profile bundle: **Plugins → Add plugin** in the app, or
+ask the agent to run the `plugin_manager` tool with `install_bundle` and this
+directory's absolute path.
 
-```sh
-plugin_manager install_bundle /absolute/path/to/dsh-mcp-oauth
-```
+Either route installs the package and selects the bundle. Installing the package
+alone with pnpm (`dsh plugin --profile <profile> add <dir>`) is not enough: the
+bundle must also be listed under `dsh.profile.bundles` in the profile's
+`package.json`, which is what the two routes above do.
+
+The package deliberately keeps the local name `@local/dsh-mcp-oauth`; rename it before
+publishing to a registry. It installs the row `dsh-mcp-oauth`, so the feature can be
+disabled from Plugins without uninstalling the package.
 
 ## Configure
 
